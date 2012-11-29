@@ -1,9 +1,14 @@
 App::Application.routes.draw do
+  devise_for :admins
+
   devise_for :users
 
   resources :users
 
   root :to => 'users#index'
+
+  match '/connect' => 'callback#connect'
+  match '/callback' => 'callback#callback'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
