@@ -19,14 +19,16 @@
 
 <p> Your followers: <p>
 
-<% client = Instagram.client(:access_token => session[:access_token]) %>
-<% instag_user = client.user %>
-
 <ul>
-<% client.user_followed_by.each do |follower| %>
-  <li><%= follower.username %></li>
+<% @user.followers.each do |follower| %>
+  <li><%= follower.username %> - <%= follower.state %></li>
 <% end %>
 </ul>
+
+<%= link_to 'See who has desinstagramed you!', {controller: 'callback', action: 'followers'} %>
+
+<br/>
+<br/>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

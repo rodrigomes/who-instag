@@ -9,6 +9,7 @@ App::Application.routes.draw do
 
   match '/connect' => 'callback#connect'
   match '/callback' => 'callback#callback'
+  match '/followers' => 'callback#followers'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -11,4 +11,15 @@ class User < ActiveRecord::Base
 
   has_many :followers
 
+  def has_follower(user, follower)
+  	@user = User.find_by_username(user.username)
+  	friend_exists = 0;
+  	@user.followers.each do |f|
+      if follower.username == f.username then
+        friend_exists = friend_exists + 1
+      end
+    end
+    return friend_exists
+  end
+
 end
