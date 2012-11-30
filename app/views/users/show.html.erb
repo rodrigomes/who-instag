@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Username:</b>
-  <%= @user.username %>
+  <b>Profile picture:</b>
+  <%= image_tag @user.profile_picture %>
 </p>
 
 <p>
-  <b>First name:</b>
-  <%= @user.first_name %>
+  <b>Username:</b>
+  <%= @user.username %>
 </p>
 
 <p>
@@ -15,10 +15,18 @@
   <%= @user.profile_name %>
 </p>
 
-<p>
-  <b>Last name:</b>
-  <%= @user.last_name %>
-</p>
+<p> Your information is updated from Instagram! </p>
+
+<p> Your followers: <p>
+
+<% client = Instagram.client(:access_token => session[:access_token]) %>
+<% instag_user = client.user %>
+
+<ul>
+<% client.user_followed_by.each do |follower| %>
+  <li><%= follower.username %></li>
+<% end %>
+</ul>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

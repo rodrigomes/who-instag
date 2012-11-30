@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121129145932) do
+ActiveRecord::Schema.define(:version => 20121130014837) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -31,11 +31,19 @@ ActiveRecord::Schema.define(:version => 20121129145932) do
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
 
+  create_table "followes", :force => true do |t|
+    t.string   "username"
+    t.text     "profile_picture"
+    t.string   "state"
+    t.integer  "user_id"
+    t.datetime "last_change"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "username"
-    t.string   "first_name"
     t.string   "profile_name"
-    t.string   "last_name"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "email",                  :default => "", :null => false
@@ -48,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20121129145932) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.text     "access_token"
+    t.text     "profile_picture"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
