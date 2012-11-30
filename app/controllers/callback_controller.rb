@@ -31,7 +31,7 @@ class CallbackController < ApplicationController
     #follower loop
     client = Instagram.client(:access_token => session[:access_token])
     @user = current_user
-    client.user_followed_by.each do |follower|
+    client.user_followed_by({:count => '999'}).each do |follower|
       #check if user has a follower
       if @user.has_follower(@user, follower) > 0 then
         @friend = @user.followers.find_by_username(follower.username)
