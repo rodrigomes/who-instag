@@ -15,6 +15,7 @@ class CallbackController < ApplicationController
     @user.profile_name = instag_user.full_name
     @user.access_token = session[:access_token]
     @user.profile_picture = instag_user.profile_picture
+
     @user.save!
 
     redirect_to users_path

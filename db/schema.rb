@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20121130014837) do
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
 
-  create_table "followes", :force => true do |t|
+  create_table "followers", :force => true do |t|
     t.string   "username"
     t.text     "profile_picture"
     t.string   "state"

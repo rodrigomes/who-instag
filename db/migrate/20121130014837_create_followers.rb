@@ -1,6 +1,6 @@
 class CreateFollowers < ActiveRecord::Migration
   def change
-    create_table :followes do |t|
+    create_table :followers do |t|
       t.string :username
       t.text :profile_picture
       t.string :state
