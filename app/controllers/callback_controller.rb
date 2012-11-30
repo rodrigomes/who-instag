@@ -4,7 +4,7 @@ class CallbackController < ApplicationController
 
   def callback
     response = Instagram.get_access_token(params[:code],
-    	:redirect_uri => 'http://localhost:3000/callback')
+    	:redirect_uri => 'http://who-instag.herokuapp.com/callback')
     session[:access_token] = response.access_token
 
     # update user info with instagram user data
@@ -24,7 +24,7 @@ class CallbackController < ApplicationController
   end
 
   def connect
-    redirect_to Instagram.authorize_url(:redirect_uri => 'http://localhost:3000/callback')
+    redirect_to Instagram.authorize_url(:redirect_uri => 'http://who-instag.herokuapp.com/callback')
   end
 
   def followers

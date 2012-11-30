@@ -31,7 +31,7 @@
   <p> You are logged in with Instagram! </p>
   <p> Click on <%= link_to 'show', current_user %> profile to see your friends!
 <% else %>
-  <%= link_to "Login com Instagram",  "https://api.instagram.com/oauth/authorize/?client_id=c0db2245ea5e4b09a58f81ec96e53fc0&redirect_uri=http://localhost:3000/callback&response_type=code&scope=relationships" %>
+  <%= link_to "Login com Instagram",  "https://api.instagram.com/oauth/authorize/?client_id=c0db2245ea5e4b09a58f81ec96e53fc0&redirect_uri=http://who-instag.herokuapp.com/callback&response_type=code&scope=relationships" %>
   <br />
 <% end %>
 <br />
