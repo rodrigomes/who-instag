@@ -60,7 +60,7 @@ class CallbackController < ApplicationController
         @friend = @user.followers.find_by_username(follower.username)
         @friend.state = "unfollowed"
         @friend.save!
-      elsif follower.last_change < 30.seconds.ago then
+      elsif follower.last_change < 10.minutes.ago then
         @friend = @user.followers.find_by_username(follower.username)
         @friend.state = "unfollowed"
         @friend.save!

@@ -12060,3 +12060,481 @@ Instagram::BadRequest (GET https://api.instagram.com/v1/users/self/followed-by.j
   Rendered /home/elogroup/.rvm/gems/ruby-1.9.3-p194@whoinstag/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
   Rendered /home/elogroup/.rvm/gems/ruby-1.9.3-p194@whoinstag/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-20 18:33:08 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 170ms (Views: 52.0ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /callback.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /callback.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:09 -0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:33:37 -0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:26 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:34:32 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:35:21 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/callback?code=46a70e467f3a481bb2998b8e1115cd23" for 127.0.0.1 at 2013-01-20 18:35:37 -0200
+Processing by CallbackController#callback as HTML
+  Parameters: {"code"=>"46a70e467f3a481bb2998b8e1115cd23"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 1892ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/callback_controller.rb:6:in `callback'
+
+
+  Rendered /home/elogroup/.rvm/gems/ruby-1.9.3-p194@whoinstag/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/elogroup/.rvm/gems/ruby-1.9.3-p194@whoinstag/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/elogroup/.rvm/gems/ruby-1.9.3-p194@whoinstag/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/callback?code=46a70e467f3a481bb2998b8e1115cd23" for 127.0.0.1 at 2013-01-20 18:37:09 -0200
+Processing by CallbackController#callback as HTML
+  Parameters: {"code"=>"46a70e467f3a481bb2998b8e1115cd23"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  UPDATE "users" SET "access_token" = '188973886.2523ac2.c080cd43f0574e949e4137cf821b4cba', "updated_at" = '2013-01-20 20:37:13.098650' WHERE "users"."id" = 1
+  [1m[36m (20.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 3914ms (ActiveRecord: 33.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:13 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mFollower Load (0.8ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1[0m
+  Rendered users/show.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 63ms (Views: 54.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:18 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/followers" for 127.0.0.1 at 2013-01-20 18:37:51 -0200
+Processing by CallbackController#followers as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'rdrgomes' LIMIT 1[0m
+  [1m[35mFollower Load (0.7ms)[0m  SELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1
+  [1m[36mFollower Load (0.7ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1 AND "followers"."username" = 'rafaserejo' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (15.2ms)[0m  [1mUPDATE "followers" SET "state" = 'friend', "last_change" = '2013-01-20 20:37:53.307902', "updated_at" = '2013-01-20 20:37:53.310624' WHERE "followers"."id" = 1[0m
+  [1m[35m (12.5ms)[0m  COMMIT
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'rdrgomes' LIMIT 1[0m
+  [1m[35mFollower Load (0.7ms)[0m  SELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1
+  [1m[36mFollower Load (0.8ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1 AND "followers"."username" = 'clarie_m' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "followers" SET "state" = 'friend', "last_change" = '2013-01-20 20:37:53.348998', "updated_at" = '2013-01-20 20:37:53.350535' WHERE "followers"."id" = 2[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'rdrgomes' LIMIT 1[0m
+  [1m[35mFollower Load (0.7ms)[0m  SELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1
+  [1m[36mFollower Load (0.8ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1 AND "followers"."username" = 'dudassispedrosa' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "followers" SET "state" = 'friend', "last_change" = '2013-01-20 20:37:53.364624', "updated_at" = '2013-01-20 20:37:53.366163' WHERE "followers"."id" = 3[0m
+  [1m[35m (4.9ms)[0m  COMMIT
+  [1m[36mFollower Load (0.8ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 2160ms (ActiveRecord: 47.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mFollower Load (0.6ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1[0m
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /callback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:37:53 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/followers" for 127.0.0.1 at 2013-01-20 18:47:07 -0200
+Processing by CallbackController#followers as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'rdrgomes' LIMIT 1[0m
+  [1m[35mFollower Load (0.6ms)[0m  SELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1
+  [1m[36mFollower Load (0.7ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1 AND "followers"."username" = 'rafaserejo' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "followers" SET "last_change" = '2013-01-20 20:47:09.826830', "updated_at" = '2013-01-20 20:47:09.828437' WHERE "followers"."id" = 1[0m
+  [1m[35m (13.7ms)[0m  COMMIT
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'rdrgomes' LIMIT 1[0m
+  [1m[35mFollower Load (0.7ms)[0m  SELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1
+  [1m[36mFollower Load (0.7ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1 AND "followers"."username" = 'clarie_m' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "followers" SET "last_change" = '2013-01-20 20:47:09.851878', "updated_at" = '2013-01-20 20:47:09.853477' WHERE "followers"."id" = 2[0m
+  [1m[35m (5.2ms)[0m  COMMIT
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'rdrgomes' LIMIT 1[0m
+  [1m[35mFollower Load (0.7ms)[0m  SELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1
+  [1m[36mFollower Load (0.7ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1 AND "followers"."username" = 'dudassispedrosa' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "followers" SET "last_change" = '2013-01-20 20:47:09.867947', "updated_at" = '2013-01-20 20:47:09.869492' WHERE "followers"."id" = 3[0m
+  [1m[35m (5.6ms)[0m  COMMIT
+  [1m[36mFollower Load (0.8ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 1887ms (ActiveRecord: 35.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mFollower Load (0.7ms)[0m  [1mSELECT "followers".* FROM "followers" WHERE "followers"."user_id" = 1[0m
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/callback.css?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /callback.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/callback.js?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /callback.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-20 18:47:09 -0200
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
