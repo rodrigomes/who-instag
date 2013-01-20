@@ -3,8 +3,13 @@ class CallbackController < ApplicationController
   before_filter :authenticate_user!
 
   def callback
-    response = Instagram.get_access_token(params[:code],
-    	:redirect_uri => 'http://who-instag.herokuapp.com/callback')
+    if Rails.env.development? || Rails.env.test?
+      response = Instagram.get_access_token(params[:code],
+    	  :redirect_uri => 'http://localhost:3000/callback')
+    else
+      response = Instagram.get_access_token(params[:code],
+        :redirect_uri => 'http://who-instag.herokuapp.com/callback')
+    end
     session[:access_token] = response.access_token
 
     # update user info with instagram user data
